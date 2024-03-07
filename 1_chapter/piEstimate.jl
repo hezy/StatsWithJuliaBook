@@ -1,4 +1,4 @@
-using Random, LinearAlgebra, Plots; pyplot()
+using Random, LinearAlgebra, Plots
 Random.seed!()
 
 N = 10^5
