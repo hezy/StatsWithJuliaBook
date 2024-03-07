@@ -1,4 +1,4 @@
-using StatsBase, Combinatorics, Plots ; pyplot()
+using StatsBase, Combinatorics, Plots
 
 matchExists1(n) = 1 - prod([k/365 for k in 365:-1:365-n+1])
 matchExists2(n) = 1- factorial(365,365-big(n))/365^big(n)
@@ -19,8 +19,8 @@ println("Maximum error: $(maximum(abs.(analyticSolution1 - analyticSolution2)))"
 N = 10^3
 mcEstimates = [probEst(n) for n in xGrid]
 
-plot(xGrid, analyticSolution1, c=:blue, label="Analytic solution")
-scatter!(xGrid, mcEstimates, c=:red, ms=6, msw=0, shape=:xcross, 
+plot(xGrid, analyticSolution1, c=:yellow, label="Analytic solution")
+scatter!(xGrid, mcEstimates, c=:red, ms=3, msw=3, shape=:xcross, 
 	label="MC estimate", xlims=(0,50), ylims=(0, 1), 
 	xlabel="Number of people in room", 
 	ylabel="Probability of birthday match", 
