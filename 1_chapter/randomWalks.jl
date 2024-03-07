@@ -1,4 +1,4 @@
-using Plots, Random, Measures; pyplot()
+using Plots, Random, Measures
 
 function path(rng, alpha, n=5000)
     x, y = 0.0, 0.0
