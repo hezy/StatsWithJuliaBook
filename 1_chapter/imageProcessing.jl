@@ -1,6 +1,6 @@
 using Plots, Images
 
-img = load("../data/stars.png")
+img = load("./data/stars.png")
 gImg = red.(img)*0.299 + green.(img)*0.587 + blue.(img)*0.114
 rows, cols = size(img)
 
