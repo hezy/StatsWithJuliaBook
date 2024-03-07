@@ -1,4 +1,4 @@
-using Plots, LaTeXStrings, Measures; pyplot()
+using Plots, LaTeXStrings, Measures
 
 a, c, m = 69069, 1, 2^32
 next(z) = (a*z + c) % m

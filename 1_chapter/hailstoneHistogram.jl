@@ -1,4 +1,4 @@
-using Plots; pyplot()
+using Plots
 
 function hailLength(x::Int)
     n = 0

@@ -1,4 +1,4 @@
-using Plots; pyplot()
+using Plots
 
 function graphCreator(n::Int)
     vertices = 1:n
