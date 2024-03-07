@@ -1,4 +1,4 @@
-using Plots ; pyplot()
+using Plots
 
 occupancyAnalytic(n,r) =  sum([(-1)^k*binomial(n,k)*(1 - k/n)^r for k in 0:n])
 
@@ -25,6 +25,6 @@ monteCarlo = [[occupancyMC(n,k*n,N) for n in 1:max_n] for k in Kvals]
 
 plot(1:max_n, analytic, c=[:blue :red :green], 
 	label=["K=2" "K=3" "K=4"])
-scatter!(1:max_n, monteCarlo, mc=:black, shape=:+, 
+scatter!(1:max_n, monteCarlo, mc=:white, shape=:+, 
 	label="", xlims=(0,max_n),ylims=(0,1), 
 	xlabel="n Envelopes", ylabel="Probability", legend=:topright)
