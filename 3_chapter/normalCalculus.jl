@@ -1,4 +1,4 @@
-using Distributions, Calculus, SpecialFunctions, Plots; pyplot()
+using Distributions, Calculus, SpecialFunctions, Plots
 
 xGrid = -5:0.01:5
 

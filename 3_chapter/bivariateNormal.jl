@@ -1,6 +1,6 @@
-using Distributions, Plots; pyplot()
+using Distributions, Plots
 
-include("../data/mvParams.jl")
+include("./data/mvParams.jl")
 biNorm = MvNormal(meanVect,covMat)
 
 N = 10^3

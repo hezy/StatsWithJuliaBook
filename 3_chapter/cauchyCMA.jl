@@ -1,4 +1,4 @@
-using Random, Plots; pyplot()
+using Random, Plots
 Random.seed!(808)
 
 n = 10^6

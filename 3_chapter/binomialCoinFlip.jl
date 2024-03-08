@@ -1,4 +1,4 @@
-using StatsBase, Distributions, Plots; pyplot()
+using StatsBase, Distributions, Plots
 
 binomialRV(n,p) = sum(rand(n) .< p)
 

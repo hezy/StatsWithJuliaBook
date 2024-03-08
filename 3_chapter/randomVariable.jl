@@ -1,4 +1,4 @@
-using StatsBase, Plots; pyplot()
+using StatsBase, Plots
 
 names = ["Mary","Mel","David","John","Kayley","Anderson"]
 randomName() = rand(names)

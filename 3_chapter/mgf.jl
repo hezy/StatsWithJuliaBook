@@ -1,4 +1,4 @@
-using Distributions, Statistics, Plots; pyplot()
+using Distributions, Statistics, Plots
 
 dist1 = TriangularDist(0,1,1)
 dist2 = TriangularDist(0,1,0)

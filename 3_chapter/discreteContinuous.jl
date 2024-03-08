@@ -1,4 +1,4 @@
-using Plots, Measures; pyplot()
+using Plots, Measures
 
 pDiscrete = [0.25, 0.25, 0.5]
 xGridD = 0:2
