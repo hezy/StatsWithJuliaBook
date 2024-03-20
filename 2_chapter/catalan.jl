@@ -1,5 +1,5 @@
 using Random, Combinatorics, Plots, LaTeXStrings
-Random.seed!(12)
+#Random.seed!(14)
 
 n, N = 5, 10^5
 
@@ -19,7 +19,7 @@ function randomWalkPath(n)
     path = []
     while x<n && y<n
        if rand()<0.5
-            x += 1
+            x += 1 #
             push!(path,0)
         else
             y += 1
@@ -28,7 +28,9 @@ function randomWalkPath(n)
     end
     append!(path, x<n ? zeros(Int64,n-x) : ones(Int64,n-y))
     return path
-end
+end #...
+
+# remark
 
 pA_modelIIest = sum([isUpperLattice(randomWalkPath(n)) for _ in 1:N])/N
 println("Model I: ",pA_modelI, "\t Model II: ", pA_modelIIest)
